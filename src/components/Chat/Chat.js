@@ -39,7 +39,7 @@ const Chat = ({location}) => {
         socket.on("roomData", ({ users }) => {
             setUsers(users);
           });
-    },[messages]);
+    },[]);
     //useEffect hook takes place when location.search value changes
     //function for sending messages
     const sendMessage = (event) =>{
